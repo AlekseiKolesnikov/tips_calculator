@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tips Calculator</title>
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div id="main-block">
+    <div id="label-of-block">
+        <h3>Tip Calculator</h3>
+    </div>
+    <div id="bill-amount">
+        <p>Bill Amount</p>
+        <button id="dollar">💲</button>
+        <label>
+            <input id="bill" type="number">
+        </label>
+    </div>
+    <div id="guests-number">
+        <p>Guests Number</p>
+        <button id="people">👥</button>
+        <label>
+            <input id="guests" type="number">
+        </label>
+    </div>
+    <div id="service-quality-block">
+        <p>Service Quality</p>
+        <label>
+            <select id="service-quality">
+                <option value="0.3">30% - Outstanding</option>
+                <option value="0.2">20% - Good</option>
+                <option value="0.15">15% - Distant</option>
+                <option value="0.1">10% - Bad</option>
+                <option value="0.05">5% - Terrible</option>
+            </select>
+        </label>
+    </div>
+    <div id="calculate">
+        <button type="submit" id="calculate-button" class="buttonResult">Calculate</button>
+    </div>
+</div>
+<div class="popup-body">
+    <p class="popupText" id="numbers"></p>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
